@@ -218,7 +218,7 @@ body {
 }
 .screen3 {
   background-image: url("../images/t3-bg.jpg");
-  background-size: 100%;
+  background-size: 1920px;
   background-position: center 65%;
   background-repeat: no-repeat;
   padding: 40px 0;
@@ -247,6 +247,7 @@ body {
     }
   }
   @media (max-width: 1440px) {
+    background-size: 1440px;
     background-position: center 70%;
     padding: 20px 0;
     &__btn {
@@ -254,32 +255,31 @@ body {
     }
   }
   @media (max-width: 1280px) {
-    background-size: 105%;
+    background-size: 1280px;
     &__btn {
       height: 420px;
     }
   }
   @media (max-width: 1024px) {
-    background-size: 130%;
+    // background-size: 1024px;
     padding: 28px 0;
-    &__btn {
-      top: 414px;
-    }
   }
   @media (max-width: 912px) {
-    background-size: 170%;
+    // background-size: 912px;
+    // &__btn {
+    //   height: 440px;
+    // }
   }
   @media (max-width: 767px) {
     background-image: url("../images/t3-bg-m.jpg");
     background-size: 100%;
-    max-width: 428px;
     margin: auto;
     &__title {
       &Main {
         font-size: 17px;
       }
       &Sub {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
     &__btn {
@@ -287,9 +287,13 @@ body {
     }
   }
   @media (max-width: 414px) {
+    background-position: center;
     &__btn {
       height: 400px;
     }
+  }
+  @media (max-width: 375px) {
+    background-size: 110%;
   }
   @media (max-width: 320px) {
     padding: 15px 0;
@@ -300,6 +304,9 @@ body {
     &__title {
       &Main {
         font-size: 15px;
+      }
+      &Sub {
+        font-size: 12px;
       }
     }
   }
@@ -414,6 +421,9 @@ body {
     margin: 15px auto 0;
     display: block;
     width: fit-content;
+  }
+  @media (max-width: 1024px) {
+    padding: 28px 0;
   }
 }
 .screen7 {

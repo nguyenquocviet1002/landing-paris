@@ -64,6 +64,35 @@
   }
 }
 
+@media only screen and (max-width: 912px) {
+  .footer {
+    &__addressItem {
+      p {
+        margin-bottom: 7px;
+      }
+    }
+    &__contact {
+      flex-direction: column;
+    }
+    &__info {
+      padding: 10px 0 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .footer {
+    &__logo {
+      display: none;
+    }
+    &__social {
+      margin: auto;
+    }
+    &__info {
+      padding: 5px 0 0 0;
+    }
+  }
+}
 @media only screen and (max-width: 320px) {
   .footer {
     &__logo {

@@ -3698,8 +3698,11 @@ ul.tabs li {
   .header_1_0_0 {
     height: 80px;
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
     width: 100%;
+  }
+  .header_1_0_0__logo {
+    margin-top: 5px;
   }
   .header_1_0_0__logo img {
     width: 100px;
@@ -3719,7 +3722,7 @@ ul.tabs li {
     width: 40px;
     height: 40px;
     color: #fff;
-    font-size: 45px;
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3873,6 +3876,28 @@ ul.tabs li {
   padding-left: 10px;
 }
 
+@media only screen and (max-width: 912px) {
+  .footer__addressItem p {
+    margin-bottom: 7px;
+  }
+  .footer__contact {
+    flex-direction: column;
+  }
+  .footer__info {
+    padding: 10px 0 0 0;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .footer__logo {
+    display: none;
+  }
+  .footer__social {
+    margin: auto;
+  }
+  .footer__info {
+    padding: 5px 0 0 0;
+  }
+}
 @media only screen and (max-width: 320px) {
   .footer__logo img {
     width: 100px;
@@ -4354,7 +4379,7 @@ body {
 
 .screen3 {
   background-image: url("../images/t3-bg.jpg");
-  background-size: 100%;
+  background-size: 1920px;
   background-position: center 65%;
   background-repeat: no-repeat;
   padding: 40px 0;
@@ -4382,6 +4407,7 @@ body {
 }
 @media (max-width: 1440px) {
   .screen3 {
+    background-size: 1440px;
     background-position: center 70%;
     padding: 20px 0;
   }
@@ -4391,7 +4417,7 @@ body {
 }
 @media (max-width: 1280px) {
   .screen3 {
-    background-size: 105%;
+    background-size: 1280px;
   }
   .screen3__btn {
     height: 420px;
@@ -4399,38 +4425,36 @@ body {
 }
 @media (max-width: 1024px) {
   .screen3 {
-    background-size: 130%;
     padding: 28px 0;
-  }
-  .screen3__btn {
-    top: 414px;
-  }
-}
-@media (max-width: 912px) {
-  .screen3 {
-    background-size: 170%;
   }
 }
 @media (max-width: 767px) {
   .screen3 {
     background-image: url("../images/t3-bg-m.jpg");
     background-size: 100%;
-    max-width: 428px;
     margin: auto;
   }
   .screen3__titleMain {
     font-size: 17px;
   }
   .screen3__titleSub {
-    font-size: 12px;
+    font-size: 14px;
   }
   .screen3__btn {
     height: 365px;
   }
 }
 @media (max-width: 414px) {
+  .screen3 {
+    background-position: center;
+  }
   .screen3__btn {
     height: 400px;
+  }
+}
+@media (max-width: 375px) {
+  .screen3 {
+    background-size: 110%;
   }
 }
 @media (max-width: 320px) {
@@ -4443,6 +4467,9 @@ body {
   }
   .screen3__titleMain {
     font-size: 15px;
+  }
+  .screen3__titleSub {
+    font-size: 12px;
   }
 }
 
@@ -4550,6 +4577,11 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media (max-width: 1024px) {
+  .screen6 {
+    padding: 28px 0;
+  }
 }
 
 .screen7 {
